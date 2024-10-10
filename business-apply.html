@@ -10,11 +10,10 @@
 
 <header>
     <div class="container">
-        <h1>Capital Express Business Cards</h1>
+        <h1>Capital Express</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="apply.html">Personal Cards</a></li>
                 <li><a href="business-apply.html">Business Cards</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -22,52 +21,65 @@
     </div>
 </header>
 
-<section class="apply-section">
+<section id="apply" class="apply">
     <div class="container">
-        <h2>Business Card Application</h2>
-        <p>Fill out the form below to apply for one of our business cards.</p>
-
-        <form action="https://formspree.io/f/xpwaejjd" method="POST">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Personal Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Personal Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="business-name">Business Name:</label>
-            <input type="text" id="business-name" name="business-name" required>
-
-            <label for="business-email">Business Email:</label>
-            <input type="email" id="business-email" name="business-email" required>
-
-            <label for="business-phone">Business Phone Number:</label>
-            <input type="tel" id="business-phone" name="business-phone" required>
-
-            <label>Select a Business Card:</label>
-            <div class="radio-group">
-                <input type="radio" id="business-platinum" name="card-type" value="Business Platinum" required>
-                <label for="business-platinum">Business Platinum</label><br>
-
-                <input type="radio" id="business-gold" name="card-type" value="Business Gold" required>
-                <label for="business-gold">Business Gold</label><br>
-
-                <input type="radio" id="business-silver" name="card-type" value="Business Silver" required>
-                <label for="business-silver">Business Silver</label>
+        <h2>Apply for Your Business Card</h2>
+        <form id="business-application-form" action="https://formspree.io/f/xpwaejjd" method="POST" class="application-form">
+            <h3>Select Your Business Card Type</h3>
+            <div class="card-selection">
+                <label>
+                    <input type="radio" name="card" value="Business Platinum" required>
+                    <div class="card-option platinum">
+                        <h4>Capital Express Business Platinum Card</h4>
+                        <p>the premium way to treat your business.</p>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="card" value="Business Gold" required>
+                    <div class="card-option gold">
+                        <h4>Capital Express Business Gold Card</h4>
+                        <p>Great rewards for business spending.</p>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="card" value="Business Silver" required>
+                    <div class="card-option silver">
+                        <h4>Capital Express Business Silver Card</h4>
+                        <p>For small businesses building credit.</p>
+                    </div>
+                </label>
             </div>
 
-            <button type="submit" class="cta-button">Submit Application</button>
+            <h3>Business Information</h3>
+            <label for="business-name">Business Name:</label>
+            <input type="text" name="business-name" id="business-name" required>
+
+            <label for="personal-name">Personal Name:</label>
+            <input type="text" name="personal-name" id="personal-name" required>
+
+            <label for="personal-email">Personal Email:</label>
+            <input type="email" name="personal-email" id="personal-email" required>
+
+            <label for="email">Business Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="phone">Business Phone:</label>
+            <input type="tel" name="phone" id="phone" required>
+
+            <label for="address">Business Address:</label>
+            <textarea name="address" id="address" required></textarea>
+
+            <button type="submit" class="cta-button">Submit Business Application</button>
         </form>
     </div>
 </section>
 
 <footer>
     <div class="container">
-        <p>&copy; 2018-2024 Capital Express. All rights reserved.</p>
+        <p>&copy; 2024 Capital Express. All rights reserved.</p>
     </div>
 </footer>
 
 </body>
 </html>
+
