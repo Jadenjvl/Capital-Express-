@@ -13,7 +13,7 @@
         <h1>Capital Express</h1>
         <nav>
             <ul>
-                <li><a href="#apply">Apply Now</a></li>
+                <li><a href="apply.html">Apply Now</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -21,52 +21,24 @@
     </div>
 </header>
 
-<section id="apply" class="apply">
+<section id="features" class="features">
     <div class="container">
-        <h2>Apply for Your Capital Express Card</h2>
-        <p>Choose your card type and fill out the application form below.</p>
-        <form id="application-form" onsubmit="submitApplication(event)" class="application-form">
-            <h3>Select Your Card Type</h3>
-            <div class="card-selection">
-                <label>
-                    <input type="radio" name="card" value="Platinum" required>
-                    <div class="card-option platinum">
-                        <h4>Capital Express Platinum Card</h4>
-                        <p>Premium rewards and benefits.</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="card" value="Gold">
-                    <div class="card-option gold">
-                        <h4>Capital Express Gold Card</h4>
-                        <p>Great rewards for everyday spending.</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="card" value="Silver">
-                    <div class="card-option silver">
-                        <h4>Capital Express Silver Card</h4>
-                        <p>Ideal for building your credit.</p>
-                    </div>
-                </label>
+        <h2>Our Credit Cards</h2>
+        <div class="card-list">
+            <div class="card-item">
+                <h3>Capital Express Platinum Card</h3>
+                <p>Premium rewards and benefits.</p>
             </div>
-
-            <h3>Personal Information</h3>
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" required>
-
-            <label for="address">Address:</label>
-            <textarea id="address" required></textarea>
-
-            <button type="submit" class="cta-button">Submit Application</button>
-        </form>
-        <div id="success-message" class="success-message" style="display:none;"></div>
+            <div class="card-item">
+                <h3>Capital Express Gold Card</h3>
+                <p>Great rewards for everyday spending.</p>
+            </div>
+            <div class="card-item">
+                <h3>Capital Express Silver Card</h3>
+                <p>Ideal for building your credit.</p>
+            </div>
+        </div>
+        <p>Explore our features and enjoy a seamless banking experience!</p>
     </div>
 </section>
 
@@ -76,6 +48,7 @@
     </div>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
+
+
