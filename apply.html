@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Apply for Capital Express Card</title>
+    <title>Apply for a Personal Card - Capital Express</title>
 </head>
 <body>
 
@@ -14,7 +14,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#apply">Apply Now</a></li>
+                <li><a href="apply.html">Apply Now</a></li>
+                <li><a href="business-apply.html">Business Cards</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
@@ -23,27 +24,26 @@
 
 <section id="apply" class="apply">
     <div class="container">
-        <h2>Apply for Your Capital Express Card</h2>
-        <p>Choose your card type and fill out the application form below.</p>
-        <form id="application-form" action="https://formspree.io/f/xpwaejjd" method="POST" class="application-form">
+        <h2>Apply for Your Personal Card</h2>
+        <form id="personal-application-form" action="https://formspree.io/f/xpwaejjd" method="POST" class="application-form">
             <h3>Select Your Card Type</h3>
             <div class="card-selection">
                 <label>
-                    <input type="radio" name="card" value="Platinum" required>
+                    <input type="radio" name="card" value="Capital Express Platinum Card" required>
                     <div class="card-option platinum">
                         <h4>Capital Express Platinum Card</h4>
-                        <p>Premium rewards and benefits.</p>
+                        <p>Premium rewards and benefits for personal use.</p>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="card" value="Gold" required>
+                    <input type="radio" name="card" value="Capital Express Gold Card" required>
                     <div class="card-option gold">
                         <h4>Capital Express Gold Card</h4>
                         <p>Great rewards for everyday spending.</p>
                     </div>
                 </label>
                 <label>
-                    <input type="radio" name="card" value="Silver" required>
+                    <input type="radio" name="card" value="Capital Express Silver Card" required>
                     <div class="card-option silver">
                         <h4>Capital Express Silver Card</h4>
                         <p>Ideal for building your credit.</p>
@@ -52,19 +52,25 @@
             </div>
 
             <h3>Personal Information</h3>
-            <label for="name">Full Name:</label>
-            <input type="text" name="name" id="name" required>
+            <label for="full-name">Full Name:</label>
+            <input type="text" name="full-name" id="full-name" required>
 
-            <label for="email">Email:</label>
+            <label for="email">Personal Email:</label>
             <input type="email" name="email" id="email" required>
 
             <label for="phone">Phone Number:</label>
             <input type="tel" name="phone" id="phone" required>
 
             <label for="address">Address:</label>
-            <textarea name="address" id="address" required></textarea>
+            <input type="text" name="address" id="address" required>
 
-            <button type="submit" class="cta-button">Submit Application</button>
+            <label for="income">Annual Income:</label>
+            <input type="number" name="income" id="income" required>
+
+            <label for="net-worth">Net Worth:</label>
+            <input type="number" name="net-worth" id="net-worth" required>
+
+            <button type="submit" class="cta-button">Submit Personal Application</button>
         </form>
     </div>
 </section>
@@ -77,3 +83,4 @@
 
 </body>
 </html>
+
