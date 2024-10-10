@@ -10,10 +10,11 @@
 
 <header>
     <div class="container">
-        <h1>Capital Express</h1>
+        <h1>Capital Express Business Cards</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="apply.html">Personal Cards</a></li>
                 <li><a href="business-apply.html">Business Cards</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -21,52 +22,39 @@
     </div>
 </header>
 
-<section id="apply" class="apply">
+<section class="apply-section">
     <div class="container">
-        <h2>Apply for Your Business Card</h2>
-        <form id="business-application-form" action="https://formspree.io/f/xpwaejjd" method="POST" class="application-form">
-            <h3>Select Your Business Card Type</h3>
-            <div class="card-selection">
-                <label>
-                    <input type="radio" name="card" value="Business Platinum" required>
-                    <div class="card-option platinum">
-                        <h4>Capital Express Business Platinum Card</h4>
-                        <p>Premium rewards for your business.</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="card" value="Business Gold" required>
-                    <div class="card-option gold">
-                        <h4>Capital Express Business Gold Card</h4>
-                        <p>Great rewards for business spending.</p>
-                    </div>
-                </label>
-                <label>
-                    <input type="radio" name="card" value="Business Silver" required>
-                    <div class="card-option silver">
-                        <h4>Capital Express Business Silver Card</h4>
-                        <p>For small businesses building credit.</p>
-                    </div>
-                </label>
-            </div>
+        <h2>Business Card Application</h2>
+        <p>Fill out the form below to apply for one of our business cards.</p>
 
-            <h3>Business Information</h3>
+        <form action="https://formspree.io/f/xpwaejjd" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Personal Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Personal Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
             <label for="business-name">Business Name:</label>
-            <input type="text" name="business-name" id="business-name" required>
+            <input type="text" id="business-name" name="business-name" required>
 
-            <label for="tax-id">Tax ID:</label>
-            <input type="text" name="tax-id" id="tax-id" required>
+            <label for="business-email">Business Email:</label>
+            <input type="email" id="business-email" name="business-email" required>
 
-            <label for="email">Business Email:</label>
-            <input type="email" name="email" id="email" required>
+            <label for="business-phone">Business Phone Number:</label>
+            <input type="tel" id="business-phone" name="business-phone" required>
 
-            <label for="phone">Business Phone:</label>
-            <input type="tel" name="phone" id="phone" required>
+            <label for="card-type">Select Card Type:</label>
+            <select id="card-type" name="card-type" required>
+                <option value="">Select a Business Card</option>
+                <option value="Business Platinum">Business Platinum</option>
+                <option value="Business Gold">Business Gold</option>
+                <option value="Business Silver">Business Silver</option>
+            </select>
 
-            <label for="address">Business Address:</label>
-            <textarea name="address" id="address" required></textarea>
-
-            <button type="submit" class="cta-button">Submit Business Application</button>
+            <button type="submit" class="cta-button">Submit Application</button>
         </form>
     </div>
 </section>
