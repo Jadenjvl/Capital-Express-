@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Apply for Capital Express Card</title>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Capital Express</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#apply">Apply Now</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="apply" class="apply">
+    <div class="container">
+        <h2>Apply for Your Capital Express Card</h2>
+        <p>Choose your card type and fill out the application form below.</p>
+        <form id="application-form" onsubmit="submitApplication(event)" class="application-form">
+            <h3>Select Your Card Type</h3>
+            <div class="card-selection">
+                <label>
+                    <input type="radio" name="card" value="Platinum" required>
+                    <div class="card-option platinum">
+                        <h4>Capital Express Platinum Card</h4>
+                        <p>Premium rewards and benefits.</p>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="card" value="Gold">
+                    <div class="card-option gold">
+                        <h4>Capital Express Gold Card</h4>
+                        <p>Great rewards for everyday spending.</p>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="card" value="Silver">
+                    <div class="card-option silver">
+                        <h4>Capital Express Silver Card</h4>
+                        <p>Ideal for building your credit.</p>
+                    </div>
+                </label>
+            </div>
+
+            <h3>Personal Information</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+
+            <button type="submit" class="cta-button">Submit Application</button>
+        </form>
+        <div id="success-message" class="success-message" style="display:none;"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Capital Express. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
