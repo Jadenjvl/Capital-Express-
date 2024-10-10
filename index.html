@@ -3,81 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capital Express</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Capital Express</title>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Capital Express</h1>
-            <p>Your Trusted Partner for Financial Solutions</p>
-            <a href="#apply" class="cta-button">Apply Now</a>
-        </div>
-    </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Credit Cards</h2>
-            <div class="card-list">
-                <!-- Capital Express Platinum Card -->
-                <div class="card">
-                    <h3>Capital Express Platinum Card</h3>
-                    <p>Unlock elite rewards and benefits with no annual fees for the first year!</p>
-                    <ul>
-                        <li>Premium rewards on travel and dining</li>
-                        <li>Travel insurance and purchase protection</li>
-                        <li>Airport lounge access</li>
-                    </ul>
-                    <a href="#apply" class="cta-button">Learn More</a>
-                </div>
-                <!-- Capital Express Gold Card -->
-                <div class="card">
-                    <h3>Capital Express Gold Card</h3>
-                    <p>Enjoy competitive rates and cashback on everyday purchases.</p>
-                    <ul>
-                        <li>Cashback on groceries and gas</li>
-                        <li>No foreign transaction fees</li>
-                        <li>Extended warranty protection</li>
-                    </ul>
-                    <a href="#apply" class="cta-button">Learn More</a>
-                </div>
-                <!-- Capital Express Silver Card -->
-                <div class="card">
-                    <h3>Capital Express Silver Card</h3>
-                    <p>A great option for everyday spending with no annual fees.</p>
-                    <ul>
-                        <li>Cash rewards on all purchases</li>
-                        <li>Online account management</li>
-                        <li>Flexible payment options</li>
-                    </ul>
-                    <a href="#apply" class="cta-button">Learn More</a>
-                </div>
+<header>
+    <div class="container">
+        <h1>Capital Express</h1>
+        <nav>
+            <ul>
+                <li><a href="#apply">Apply Now</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="apply" class="apply">
+    <div class="container">
+        <h2>Apply for Your Capital Express Card</h2>
+        <p>Choose your card type and fill out the application form below.</p>
+        <form id="application-form" onsubmit="submitApplication(event)" class="application-form">
+            <h3>Select Your Card Type</h3>
+            <div class="card-selection">
+                <label>
+                    <input type="radio" name="card" value="Platinum" required>
+                    <div class="card-option platinum">
+                        <h4>Capital Express Platinum Card</h4>
+                        <p>Premium rewards and benefits.</p>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="card" value="Gold">
+                    <div class="card-option gold">
+                        <h4>Capital Express Gold Card</h4>
+                        <p>Great rewards for everyday spending.</p>
+                    </div>
+                </label>
+                <label>
+                    <input type="radio" name="card" value="Silver">
+                    <div class="card-option silver">
+                        <h4>Capital Express Silver Card</h4>
+                        <p>Ideal for building your credit.</p>
+                    </div>
+                </label>
             </div>
-        </div>
-    </section>
 
-    <!-- How to Apply Section -->
-    <section id="apply" class="apply">
-        <div class="container">
-            <h2>How to Apply</h2>
-            <p>Applying for a Capital Express card is easy and quick!</p>
-            <ol>
-                <li>Fill out the online application form.</li>
-                <li>Receive approval within minutes.</li>
-                <li>Get your card delivered right to your door.</li>
-            </ol>
-            <a href="#" class="cta-button">Start Application</a>
-        </div>
-    </section>
+            <h3>Personal Information</h3>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Capital Express. All rights reserved.</p>
-            <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
-        </div>
-    </footer>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+
+            <button type="submit" class="cta-button">Submit Application</button>
+        </form>
+        <div id="success-message" class="success-message" style="display:none;"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Capital Express. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
