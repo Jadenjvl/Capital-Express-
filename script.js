@@ -13,7 +13,7 @@ function submitApplication(event) {
     successMessage.style.display = 'block';
     successMessage.innerHTML = `<h4>Application Submitted!</h4>
                                  <p>Thank you, ${name}. Your application for the Capital Express ${cardType} Card has been submitted.</p>
-                                 <p>We will contact you at ${email} and ${phone}.</p>`;
+                                 <p>We will contact you at ${email}.</p>`;
     
     // Clear the form
     document.getElementById('application-form').reset();
