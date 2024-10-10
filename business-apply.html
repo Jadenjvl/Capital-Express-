@@ -46,13 +46,17 @@
             <label for="business-phone">Business Phone Number:</label>
             <input type="tel" id="business-phone" name="business-phone" required>
 
-            <label for="card-type">Select Card Type:</label>
-            <select id="card-type" name="card-type" required>
-                <option value="">Select a Business Card</option>
-                <option value="Business Platinum">Business Platinum</option>
-                <option value="Business Gold">Business Gold</option>
-                <option value="Business Silver">Business Silver</option>
-            </select>
+            <label>Select a Business Card:</label>
+            <div class="radio-group">
+                <input type="radio" id="business-platinum" name="card-type" value="Business Platinum" required>
+                <label for="business-platinum">Business Platinum</label><br>
+
+                <input type="radio" id="business-gold" name="card-type" value="Business Gold" required>
+                <label for="business-gold">Business Gold</label><br>
+
+                <input type="radio" id="business-silver" name="card-type" value="Business Silver" required>
+                <label for="business-silver">Business Silver</label>
+            </div>
 
             <button type="submit" class="cta-button">Submit Application</button>
         </form>
@@ -61,7 +65,7 @@
 
 <footer>
     <div class="container">
-        <p>&copy; 2024 Capital Express. All rights reserved.</p>
+        <p>&copy; 2018-2024 Capital Express. All rights reserved.</p>
     </div>
 </footer>
 
